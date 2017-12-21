@@ -1,0 +1,176 @@
+body {
+  background-image: url("../images/rocket league game.jpg");
+  background-color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.whitebox-container{
+  right: 10%;
+  left: 10%;
+  height: 600px;
+  background-color: lightblue;
+	margin-left: 188px;
+	margin-right:60px;
+	border-radius: 5px;
+	margin-top: 80px;
+	border-radius: 10px;
+	z-index: -1;
+  position: absolute;
+  left: 10%;
+  border-radius: 10px;
+}
+
+.description {
+	margin-top: 0px;
+	margin-left: 50px;
+	width: 40%;
+	height: 30%;
+	z-index: 1;
+	color: black;
+}
+
+
+#Header {
+	background-color: lightblue;
+	right: 10%;
+	height: 50px;
+	position: absolute;
+	left: 10%;
+  border-radius: 10px;
+}
+
+#main-nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#main-nav li {
+  display: inline;
+}
+
+#main-nav li a {
+  padding-top: 24px;
+  display: inline-block;
+  width: 200px;
+  height: 99%;
+  background-color: #5e5e5e;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-nav ul {
+  list-style: none;
+  float: right;
+  margin-bottom: 7px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+
+#main-div{
+  background-image: url("../images/Skyline-blauw-geel.jpg");
+  background-color: lightblue;
+  right: 10%;
+  height: 750px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border-radius: 10px;
+}
+
+
+#main-div div{
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  color: #990000;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#catogories{
+  background-color: lightblue;
+  right: 10%;
+  height: 300px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border-radius: 10px;
+}
+
+#catogories h1{
+  text-align: center;
+}
+
+#keys{
+  background-image: url("../images/key.png");
+  background-size: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  width: 200px;
+  position: absolute;
+  left: 460px;
+  display: inline-block;
+  border-style: dotted;
+}
+
+#cars{
+  background-image: url("../images/cars.png");
+  background-size: 100%;
+  background-position: center;
+  height: 200px;
+  background-repeat: no-repeat;
+  width: 200px;
+  position: absolute;
+  left: 660px;
+  display: inline-block;
+  border-style: dotted;
+}
+
+#mystery_decals{
+  background-image: url("../images/mysterydecal.jpg");
+  background-size: 100%;
+  background-position: center;
+  height: 200px;
+  background-repeat: no-repeat;
+  width: 200px;
+  position: absolute;
+  left: 860px;
+  display: inline-block;
+  border-style: dotted;
+}
+
+#items{
+  background-color: lightblue;
+  right: 10%;
+  height: 600px;
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  border-radius: 10px;
+}
+
+#items div{
+  background-color: green;
+  left: 3%;
+  top: 3%;
+  position: relative;
+  width: 200px;
+  border-color: black;
+  border: 2px;
+  border-style: ridge;
+  border-radius: 5px;
+}
+
+#Item_Name {
+  height: 20px;
+}
+
+#Item_Price {
+  height: 20px;
+}
+
+#Item_Image {
+  height: 200px;
+}
