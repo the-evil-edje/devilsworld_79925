@@ -8,7 +8,7 @@
   <body>
     <h1>
       <?php
-          require 'Header/Header.php';
+          require 'inc/Header.php';
       ?>
     </h1>
     <div class="whitebox-container">
@@ -20,7 +20,7 @@
   				if (isset($_REQUEST['email']))  {
 
     					//Email information
-  					$admin_email = "rubenrutjens@Hotmail.com";
+  					$admin_email = "eddie.beelen@gmail.com";
   					$email = $_REQUEST['email'];
   					$subject = $_REQUEST['subject'];
   					$comment = $_REQUEST['comment'];

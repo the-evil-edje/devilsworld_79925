@@ -152,9 +152,14 @@ body {
 }
 
 #items div{
-  background-color: green;
   left: 3%;
   top: 3%;
+  position: relative;
+  width: 200px;
+}
+
+#items div div{
+  background-color: green;
   position: relative;
   width: 200px;
   border-color: black;
@@ -173,4 +178,23 @@ body {
 
 #Item_Image {
   height: 200px;
+}
+
+footer {
+	position:fixed;
+	left: 0px;
+	bottom: 0px;
+	height:40px;
+	width:100%;
+	
+	color: white;
+	text-align: center;
+}
+
+#footer-text {
+	margin: 0 auto;
+	color: #800000;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
 }

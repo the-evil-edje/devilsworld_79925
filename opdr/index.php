@@ -9,13 +9,17 @@
 	<body>
 		<h1>
 			<?php
-			 		require 'Header/Header.php';
+			 		require 'inc/Header.php';
 			?>
 		</h1>
 		<div id="main-div">
 			<div>
 				<h1>Welcome to the rocket league shop</h1>
 			</div>
+
 		</div>
+		<?php
+    include("inc/footer.php")
+    ?>
 	</body>
 </html>

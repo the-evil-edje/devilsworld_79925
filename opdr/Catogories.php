@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "gameworldclass";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-$catId = $_GET['catId'];
-
-
-
-
-$sql = "SELECT *
-  FROM items
-  WHERE Item_Catogorie = $catId";
-
-
-$result = mysqli_query($conn, $sql);
-
-
-
+    require 'inc/phpdatabase.php';
 ?>
 <html>
 	<head>
@@ -37,7 +12,7 @@ $result = mysqli_query($conn, $sql);
 	<body>
 		<h1>
 			<?php
-			 		require 'Header/Header.php';
+			 		require 'inc/Header.php';
 			?>
 		</h1>
 		<div id="catogories">
@@ -64,21 +39,27 @@ $result = mysqli_query($conn, $sql);
           while($row = mysqli_fetch_assoc($result)) {
 
             ?>
-			<div id="Item_Name">
+      <div>
 
-        <?php
-        echo $row['Item_Name'];
-         ?>
 
-			</div>
-      <div id="Item_Price">
-        &euro;<?php
-        echo $row['Item_Price'];
-         ?>
+        <div id="Item_Image">
+          <img src="images/<?php  echo $row['Image']; ?>">
+        </div>
+  			<div id="Item_Name">
+
+          <?php
+          echo $row['Item_Name'];
+           ?>
+
+  			</div>
+        <div id="Item_Price">
+          &euro;<?php
+          echo $row['Item_Price'];
+           ?>
+        </div>
+        <button type="button" name="order">Order</button>
       </div>
-      <div id="Item_Image">
-        <img src="images/<?php  echo $row['Image']; ?>">
-      </div>
+
       <?php
 
           }
@@ -91,5 +72,8 @@ $result = mysqli_query($conn, $sql);
 
 
 		</div>
+    <?php
+    include("inc/footer.php")
+    ?>
 	</body>
 </html>
